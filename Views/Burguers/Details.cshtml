@@ -1,0 +1,42 @@
+﻿@model JT_webBurguer2.Models.Burguer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Burguer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurguerName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurguerName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.withCheese)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.withCheese)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.priceCeiling)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.priceCeiling)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.BurguerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

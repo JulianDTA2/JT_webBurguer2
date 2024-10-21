@@ -1,0 +1,49 @@
+﻿@model JT_webBurguer2.Models.Burguer
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Burguer</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="BurguerId" />
+            <div class="form-group">
+                <label asp-for="BurguerName" class="control-label"></label>
+                <input asp-for="BurguerName" class="form-control" />
+                <span asp-validation-for="BurguerName" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="withCheese" /> @Html.DisplayNameFor(model => model.withCheese)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="price" class="control-label"></label>
+                <input asp-for="price" class="form-control" />
+                <span asp-validation-for="price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="priceCeiling" class="control-label"></label>
+                <input asp-for="priceCeiling" class="form-control" />
+                <span asp-validation-for="priceCeiling" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

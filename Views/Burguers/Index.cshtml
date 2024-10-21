@@ -1,0 +1,53 @@
+﻿@model IEnumerable<JT_webBurguer2.Models.Burguer>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BurguerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.withCheese)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.priceCeiling)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurguerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.withCheese)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.priceCeiling)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BurguerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BurguerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BurguerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
