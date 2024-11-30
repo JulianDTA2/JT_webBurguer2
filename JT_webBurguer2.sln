@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JT_webBurguer2", "JT_webBurguer2.csproj", "{B1B43973-BAA9-4A4A-9F4B-5AD5DE2D1E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JT_webBurguer2", "JT_webBurguer2.csproj", "{B1B43973-BAA9-4A4A-9F4B-5AD5DE2D1E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiJT", "WebApiJT\WebApiJT.csproj", "{088A25E7-0396-4DAA-A2B0-DC7D84E45F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiAppJT", "MauiAppJT\MauiAppJT.csproj", "{D81F55C2-97C6-4579-9978-3F0DADC59718}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,16 @@ Global
 		{B1B43973-BAA9-4A4A-9F4B-5AD5DE2D1E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1B43973-BAA9-4A4A-9F4B-5AD5DE2D1E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1B43973-BAA9-4A4A-9F4B-5AD5DE2D1E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088A25E7-0396-4DAA-A2B0-DC7D84E45F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088A25E7-0396-4DAA-A2B0-DC7D84E45F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088A25E7-0396-4DAA-A2B0-DC7D84E45F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088A25E7-0396-4DAA-A2B0-DC7D84E45F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81F55C2-97C6-4579-9978-3F0DADC59718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81F55C2-97C6-4579-9978-3F0DADC59718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81F55C2-97C6-4579-9978-3F0DADC59718}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D81F55C2-97C6-4579-9978-3F0DADC59718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81F55C2-97C6-4579-9978-3F0DADC59718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81F55C2-97C6-4579-9978-3F0DADC59718}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
